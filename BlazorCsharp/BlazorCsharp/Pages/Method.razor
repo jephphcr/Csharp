@@ -1,0 +1,40 @@
+﻿@page "/method"
+
+<PageTitle>Method</PageTitle>
+<h1>Method</h1>
+
+<div class="card">
+
+    <h4 class="text-info text-center m-3">Cálculo de salário</h4>
+    <p>Prezado Sr. @name</p>
+    <p>Seu salário bruto é @salary</p>
+    <p>Seu total de desconto é: @discount</p>
+    <p>Seu salário líquido é: @finalSalary</p>
+</div>
+
+<p class="text-center m-3">
+    <button class="btn btn-primary" @onclick="calculaSalario">
+        Calcular salário
+    </button>
+</p>
+
+@code {
+    string name = "John Doe";
+    double salary = 26850.35;
+    double discount = 6450.78;
+    double finalSalary;
+
+    void calculaSalario()
+    {
+        double discountIR;
+        discountIR = calculaIR(salary);
+        discount = discountIR;
+        finalSalary = salary - discount;
+    }
+
+    double calculaIR(double salary)
+    {
+        return salary * 0.275;
+    }
+
+}

@@ -1,0 +1,30 @@
+﻿@page "/variables" 
+
+<h1>Variables</h1>
+
+<p>
+    A variável <b>idade</b> contém o valor: @age <br/>
+    A variável <b>sol</b> contém o valor: @sun <br/>
+    A variável <b>chuva</b> contém o valor: @rain <br/>
+    A variável <b>salario</b> contém o valor: @salary <br/>
+    A variável <b>desconto</b> contém o valor: @discount <br/>
+    A variável <b>nome</b> contém o valor: @name <br/>
+    A variável <b>endereco</b> contém o valor: @address<br/>
+</p>
+
+<br />
+
+<p>
+    The variable <b>age</b> contains the age value @age
+</p>
+
+@code {
+    int age = 10;
+    Boolean sun = true;
+    bool rain = false;
+    double salary = 2500.45;
+    Double discount = 226.35;
+    string name = "André Campos";
+    String address = "Rua A";
+
+}
