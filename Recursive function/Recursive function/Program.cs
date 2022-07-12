@@ -14,7 +14,7 @@ namespace Recursive_function
         {
             string  filePath = @"C:\Arquivos\arq" + numberFile + ".txt";
 
-            if (File.Exists(filePath))
+            if (File.Exists(filePath)) 
             {
                 using (StreamReader file = File.OpenText(filePath))
                 {
