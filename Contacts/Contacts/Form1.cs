@@ -32,8 +32,11 @@ namespace Contacts
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // TODO: This line of code loads data into the 'contactDBDataSet.Table' table. You can move, or remove it, as needed.
             //this.tableTableAdapter.Fill(this.contactDBDataSet.Table);
+=======
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             // TODO: This line of code loads data into the 'contactDBDataSet.People' table. You can move, or remove it, as needed.
             this.peopleTableAdapter.Fill(this.contactDBDataSet.People);
 

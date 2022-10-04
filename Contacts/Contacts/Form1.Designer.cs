@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+<<<<<<< HEAD
+=======
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.contactDBDataSet = new Contacts.ContactDBDataSet();
@@ -50,8 +54,11 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.peopleBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+<<<<<<< HEAD
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableTableAdapter = new Contacts.ContactDBDataSetTableAdapters.TableTableAdapter();
+=======
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             this.peopleGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,7 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingNavigator)).BeginInit();
             this.peopleBindingNavigator.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+=======
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             ((System.ComponentModel.ISupportInitialize)(this.peopleGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -127,7 +137,11 @@
             this.peopleBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.peopleBindingNavigator.Name = "peopleBindingNavigator";
             this.peopleBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+<<<<<<< HEAD
             this.peopleBindingNavigator.Size = new System.Drawing.Size(752, 25);
+=======
+            this.peopleBindingNavigator.Size = new System.Drawing.Size(701, 25);
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             this.peopleBindingNavigator.TabIndex = 1;
             this.peopleBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -235,6 +249,7 @@
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
+<<<<<<< HEAD
             // tableBindingSource
             // 
             this.tableBindingSource.DataMember = "Table";
@@ -254,6 +269,22 @@
             this.peopleGridControl.TabIndex = 2;
             this.peopleGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+=======
+            // peopleGridControl
+            // 
+            this.peopleGridControl.DataSource = this.peopleBindingSource;
+            gridLevelNode1.RelationName = "Level1";
+            this.peopleGridControl.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
+            this.peopleGridControl.Location = new System.Drawing.Point(0, 91);
+            this.peopleGridControl.MainView = this.gridView1;
+            this.peopleGridControl.Name = "peopleGridControl";
+            this.peopleGridControl.Size = new System.Drawing.Size(681, 347);
+            this.peopleGridControl.TabIndex = 2;
+            this.peopleGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            this.peopleGridControl.Click += new System.EventHandler(this.peopleGridControl_Click);
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             // 
             // gridView1
             // 
@@ -264,7 +295,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(752, 600);
+=======
+            this.ClientSize = new System.Drawing.Size(701, 600);
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             this.Controls.Add(this.peopleGridControl);
             this.Controls.Add(this.peopleBindingNavigator);
             this.Controls.Add(this.pictureBox1);
@@ -279,7 +314,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingNavigator)).EndInit();
             this.peopleBindingNavigator.ResumeLayout(false);
             this.peopleBindingNavigator.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+=======
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
             ((System.ComponentModel.ISupportInitialize)(this.peopleGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
@@ -308,10 +346,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton peopleBindingNavigatorSaveItem;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.BindingSource tableBindingSource;
         private ContactDBDataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private DevExpress.XtraGrid.GridControl peopleGridControl;
+=======
+        private DevExpress.XtraGrid.GridControl peopleGridControl;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+>>>>>>> ea52d9a320c5b07cdb507cbf21a2a1be730c655a
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
