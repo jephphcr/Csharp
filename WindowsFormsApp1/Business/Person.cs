@@ -50,6 +50,7 @@ namespace Business
                     Id = Convert.ToInt32(data.Rows[i]["id"]),
                     CPF = data.Rows[i]["cpf"].ToString(),
                     Name = data.Rows[i]["name"].ToString(),
+                    Phone = data.Rows[i]["phone"].ToString(),
                     Email = data.Rows[i]["email"].ToString(),
 
                 });
