@@ -29,98 +29,56 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tabCadastro = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.btnName = new System.Windows.Forms.Button();
-            this.dgtListaClientes = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.ctxtMenuExcluir = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabResgistration = new System.Windows.Forms.TabPage();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.mskPhone = new System.Windows.Forms.MaskedTextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.mskPhone = new System.Windows.Forms.MaskedTextBox();
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.tabCadastro.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgtListaClientes)).BeginInit();
+            this.tabCustomers = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.btnName = new System.Windows.Forms.Button();
+            this.dgtListaClientes = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.tabERP = new System.Windows.Forms.TabControl();
+            this.ctxtMenuExcluir.SuspendLayout();
             this.tabResgistration.SuspendLayout();
+            this.tabCustomers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtListaClientes)).BeginInit();
+            this.tabERP.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabCadastro
+            // ctxtMenuExcluir
             // 
-            this.tabCadastro.Controls.Add(this.tabPage1);
-            this.tabCadastro.Controls.Add(this.tabResgistration);
-            this.tabCadastro.Location = new System.Drawing.Point(12, 12);
-            this.tabCadastro.Name = "tabCadastro";
-            this.tabCadastro.SelectedIndex = 0;
-            this.tabCadastro.Size = new System.Drawing.Size(672, 367);
-            this.tabCadastro.TabIndex = 12;
+            this.ctxtMenuExcluir.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.excluirToolStripMenuItem});
+            this.ctxtMenuExcluir.Name = "contextMenuStrip1";
+            this.ctxtMenuExcluir.Size = new System.Drawing.Size(110, 26);
             // 
-            // tabPage1
+            // excluirToolStripMenuItem
             // 
-            this.tabPage1.Controls.Add(this.lblSearch);
-            this.tabPage1.Controls.Add(this.btnName);
-            this.tabPage1.Controls.Add(this.dgtListaClientes);
-            this.tabPage1.Controls.Add(this.txtSearch);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(664, 341);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Lista de Clientes";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(104, 34);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(41, 13);
-            this.lblSearch.TabIndex = 15;
-            this.lblSearch.Text = "Search";
-            // 
-            // btnName
-            // 
-            this.btnName.Location = new System.Drawing.Point(293, 29);
-            this.btnName.Name = "btnName";
-            this.btnName.Size = new System.Drawing.Size(75, 23);
-            this.btnName.TabIndex = 14;
-            this.btnName.Text = "Find";
-            this.btnName.UseVisualStyleBackColor = true;
-            this.btnName.Click += new System.EventHandler(this.btnName_Click);
-            // 
-            // dgtListaClientes
-            // 
-            this.dgtListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgtListaClientes.Location = new System.Drawing.Point(0, 87);
-            this.dgtListaClientes.Name = "dgtListaClientes";
-            this.dgtListaClientes.Size = new System.Drawing.Size(664, 254);
-            this.dgtListaClientes.TabIndex = 0;
-            this.dgtListaClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtListaClientes_CellDoubleClick);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(169, 29);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(100, 20);
-            this.txtSearch.TabIndex = 13;
+            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
             // tabResgistration
             // 
             this.tabResgistration.Controls.Add(this.txtId);
+            this.tabResgistration.Controls.Add(this.txtEmail);
+            this.tabResgistration.Controls.Add(this.txtName);
             this.tabResgistration.Controls.Add(this.label1);
             this.tabResgistration.Controls.Add(this.btnSave);
-            this.tabResgistration.Controls.Add(this.txtEmail);
             this.tabResgistration.Controls.Add(this.mskPhone);
-            this.tabResgistration.Controls.Add(this.txtName);
             this.tabResgistration.Controls.Add(this.mskCPF);
             this.tabResgistration.Controls.Add(this.lblEmail);
             this.tabResgistration.Controls.Add(this.lblPhone);
@@ -134,6 +92,37 @@
             this.tabResgistration.Text = "Cadastro";
             this.tabResgistration.UseVisualStyleBackColor = true;
             // 
+            // txtId
+            // 
+            this.txtId.Enabled = false;
+            this.txtId.Location = new System.Drawing.Point(309, 20);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 20;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(309, 201);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 16;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(309, 60);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(100, 20);
+            this.txtName.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(263, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Id";
+            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(322, 258);
@@ -144,13 +133,6 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(309, 201);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
-            this.txtEmail.TabIndex = 16;
-            // 
             // mskPhone
             // 
             this.mskPhone.Location = new System.Drawing.Point(309, 154);
@@ -158,13 +140,6 @@
             this.mskPhone.Name = "mskPhone";
             this.mskPhone.Size = new System.Drawing.Size(100, 20);
             this.mskPhone.TabIndex = 14;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(309, 60);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 10;
             // 
             // mskCPF
             // 
@@ -211,67 +186,119 @@
             this.lblName.TabIndex = 11;
             this.lblName.Text = "Name";
             // 
-            // contextMenuStrip1
+            // tabCustomers
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.tabCustomers.Controls.Add(this.button1);
+            this.tabCustomers.Controls.Add(this.lblSearch);
+            this.tabCustomers.Controls.Add(this.btnName);
+            this.tabCustomers.Controls.Add(this.dgtListaClientes);
+            this.tabCustomers.Controls.Add(this.txtSearch);
+            this.tabCustomers.Location = new System.Drawing.Point(4, 22);
+            this.tabCustomers.Name = "tabCustomers";
+            this.tabCustomers.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCustomers.Size = new System.Drawing.Size(664, 341);
+            this.tabCustomers.TabIndex = 0;
+            this.tabCustomers.Text = "Lista de Clientes";
+            this.tabCustomers.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(263, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Id";
+            this.button1.Location = new System.Drawing.Point(471, 34);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.testeTab_Click);
             // 
-            // txtId
+            // lblSearch
             // 
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(309, 20);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 20;
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(104, 34);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(41, 13);
+            this.lblSearch.TabIndex = 15;
+            this.lblSearch.Text = "Search";
+            // 
+            // btnName
+            // 
+            this.btnName.Location = new System.Drawing.Point(293, 29);
+            this.btnName.Name = "btnName";
+            this.btnName.Size = new System.Drawing.Size(75, 23);
+            this.btnName.TabIndex = 0;
+            this.btnName.Text = "Find";
+            this.btnName.UseVisualStyleBackColor = true;
+            this.btnName.Click += new System.EventHandler(this.btnName_Click);
+            // 
+            // dgtListaClientes
+            // 
+            this.dgtListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtListaClientes.ContextMenuStrip = this.ctxtMenuExcluir;
+            this.dgtListaClientes.Location = new System.Drawing.Point(0, 87);
+            this.dgtListaClientes.Name = "dgtListaClientes";
+            this.dgtListaClientes.Size = new System.Drawing.Size(664, 254);
+            this.dgtListaClientes.TabIndex = 1;
+            this.dgtListaClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtListaClientes_CellDoubleClick);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(169, 29);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.TabIndex = 13;
+            // 
+            // tabERP
+            // 
+            this.tabERP.Controls.Add(this.tabCustomers);
+            this.tabERP.Controls.Add(this.tabResgistration);
+            this.tabERP.Location = new System.Drawing.Point(12, 12);
+            this.tabERP.Name = "tabERP";
+            this.tabERP.SelectedIndex = 0;
+            this.tabERP.Size = new System.Drawing.Size(672, 367);
+            this.tabERP.TabIndex = 0;
             // 
             // frmPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 391);
-            this.Controls.Add(this.tabCadastro);
+            this.Controls.Add(this.tabERP);
             this.Name = "frmPessoa";
             this.Text = "Pessoa";
             this.Load += new System.EventHandler(this.frmPessoa_Load);
-            this.tabCadastro.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgtListaClientes)).EndInit();
+            this.ctxtMenuExcluir.ResumeLayout(false);
             this.tabResgistration.ResumeLayout(false);
             this.tabResgistration.PerformLayout();
+            this.tabCustomers.ResumeLayout(false);
+            this.tabCustomers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtListaClientes)).EndInit();
+            this.tabERP.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TabControl tabCadastro;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ContextMenuStrip ctxtMenuExcluir;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
         private System.Windows.Forms.TabPage tabResgistration;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.MaskedTextBox mskPhone;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.MaskedTextBox mskPhone;
         private System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.DataGridView dgtListaClientes;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.Button btnName;
+        private System.Windows.Forms.DataGridView dgtListaClientes;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabControl tabERP;
+        private System.Windows.Forms.TabPage tabCustomers;
     }
 }
 

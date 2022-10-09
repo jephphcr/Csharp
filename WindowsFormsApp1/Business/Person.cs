@@ -60,8 +60,9 @@ namespace Business
             return person;
         }
 
-        
-
-
+        public void Excluir(int id)
+        {
+            new Database.Person().Excluir(id);
+        }
     }
 }

@@ -56,6 +56,11 @@ namespace Database
             return id;
         }
 
+        public void Excluir(int id)
+        {
+
+        }
+
         public void Update(int id, string name, string cpf, string phone,  string email)
         {
 
@@ -133,6 +138,6 @@ namespace Database
             return dt;
         }
 
-
+        
     }
 }
